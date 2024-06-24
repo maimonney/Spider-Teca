@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #b89cd3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* navegacion */
+nav {
+    background-color: #3a125f;
+}
+
+.navbar-nav a{
+    color: aliceblue;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.navbar-nav a:hover{
+    color: #d2aff3;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #b89cd3;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-toggler i{
+    color: #b89cd3;
+}
+
+main{
+    margin: 30px auto;
+}
+
+#resultado{
+    margin-bottom: 80px;
+}
+
+/* form */
+section{
+    background-color: #3a125f;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.938);
+    border: none;
+    width: 80%;
+}
+
+h2{
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+form{
+    margin: 30px;
+}
+
+input{
+    border: none;
+    border-radius: 20px;
+    width: 350px;
+    height: 35px;
+    margin-right: 30px;
+    padding: 10px;
+}
+
+input::placeholder {
+    color: #2e0338;
+}
+
+.btn{
+    background-color: rgb(184, 156, 211);
+    border-radius: 20px;
+    width: 120px;
+    color: aliceblue;
+    font-weight: 800;
+}
+
+.btn:hover{
+    background-color: #270546;
+    color: aliceblue;
+
+}
+
+.card{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.938);
+    border: none;
+}
+
+.fav h2{
+    color: #3a125f;
+    border-bottom: solid #270546;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+
+#recomendaciones{
+    background-color: #886ea1; 
+}
+
+.info_peli{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 20px 190px 20px;
+}
+
+.tarjeta_info{
+    background-color: white;
+    padding: 20px;
+    display: flex;
+}
+
+.tarjeta_info img{
+    width: 200px;
+}
+
+/* footer */
+footer{
+    background-color: #3a125f;
+    color: aliceblue;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.alumnas{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* btn fav */
+.favoritoBtn{
+    border: none;
+    background: transparent;
+    cursor: pointer; 
+    padding: 10px;
+}
+
+.favorito-container {
+    display: inline-block;
+    position: relative;
+}
+
+.favoritoBtn i{
+    color: #3a125f;
+    font-size: 25px;
+    
+}
+
+/* responsive */
+@media (min-width: 992px){
+    .navbar-expand-lg, .navbar-collapse {
+        display: flex!important;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 600px) {
+
+    form{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input{
+        margin-right: 0;
+        margin-bottom: 10PX;
+        width: 90%;
+    }
+    h2{
+       font-size: 1.5rem; 
+    }
+    .tarjeta_info{
+        display: flex;
+        flex-direction: column;
+    }
+    .alumnas{
+        display: flex;
+        flex-direction: column;
+      }
+}
