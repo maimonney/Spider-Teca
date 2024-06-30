@@ -304,3 +304,16 @@ async function mostrarInfoCompleta(idPeli) {
         infoPeli.innerHTML = '<p>Error al cargar los detalles completos de la película</p>';
     }
 }
+
+
+
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/sw.js').then(function(registration) {
+        console.log('Service Worker registrado con éxito:', registration.scope);
+      }, function(error) {
+        console.log('Fallo en el registro del Service Worker:', error);
+      });
+    });
+  }
+  
